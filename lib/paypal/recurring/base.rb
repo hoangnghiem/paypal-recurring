@@ -143,7 +143,7 @@ module PayPal
       #   response = ppr.create_recurring_profile
       #
       def create_recurring_profile
-        params = collect(:amount, :initial_amount, :initial_amount_action, :currency, :description, :payer_id, :token, :reference, :start_at, :failed, :outstanding, :ipn_url, :frequency, :period, :email)
+        params = collect(:amount, :initial_amount, :initial_amount_action, :currency, :description, :payer_id, :token, :reference, :start_at, :failed, :outstanding, :ipn_url, :frequency, :period, :email, :trial_period, :trial_frequency, :trial_total_cycles, :trial_amount)
         request.run(:create_profile, params)
       end
 
