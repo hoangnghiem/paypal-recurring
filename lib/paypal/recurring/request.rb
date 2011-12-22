@@ -65,7 +65,6 @@ module PayPal
         :trial_frequency       => "TRIALBILLINGFREQUENCY",
         :trial_total_cycles    => "TRIALTOTALBILLINGCYCLES",
         :trial_amount          => "TRIALAMT"
-
       }
 
       CA_FILE = File.dirname(__FILE__) + "/cacert.pem"

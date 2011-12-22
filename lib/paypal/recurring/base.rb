@@ -20,6 +20,10 @@ module PayPal
       attr_accessor :return_url
       attr_accessor :start_at
       attr_accessor :token
+      attr_accessor :trial_period
+      attr_accessor :trial_frequency
+      attr_accessor :trial_total_cycles
+      attr_accessor :trial_amount
 
       def initialize(options = {})
         options.each {|name, value| send("#{name}=", value)}
